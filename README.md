@@ -1,6 +1,10 @@
-# Gitflow notes
+# Gitflow, Conventional Commits and Semantic Versioning
 
 These notes are based on the following document: https://nvie.com/posts/a-successful-git-branching-model/ and indeed although it is an "old" article, it can still be useful. This document is intended as a guideline for managing future projects. Some of the terms used in that article will be replaced with more current ones. It is recommended that you read this entire document.
+
+1. [Development Process](#development-process)
+2. [Conventional Commits](#conventional-commits)
+3. [Semantic Versioning](#semver)
 
 ## What does "Gitflow" mean?
 
@@ -73,7 +77,7 @@ Finally, the `release` branch is merged into the `main` branch for distribution.
 
 # Conventional Commits
 
-Conventional Commits provide a naming convention system for labeling commits in a consistent and meaningful way, making it easier to read and understand the Git log and the changes made to the project. Using a standard convention helps maintain good code organization and facilitates collaboration among development team members.
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) provide a naming convention system for labeling commits in a consistent and meaningful way, making it easier to read and understand the Git log and the changes made to the project. Using a standard convention helps maintain good code organization and facilitates collaboration among development team members.
 
 `<type>[optional scope]: <short description>`
 
@@ -106,3 +110,25 @@ Example:
 The prefix **BREAKING CHANGE** can be used to indicate that the commit introduces a change that breaks compatibility with previous versions of the application or library. This prefix should only be used if the change is "breaking" in nature and requires significant code changes to continue functioning properly.
 
 When using the BREAKING CHANGE prefix, the commit description should provide a detailed description of the change and the modifications necessary to adapt to the new features or changes made. Additionally, the description should include a note about the nature of the change and why it was necessary.
+
+# SemVer
+
+[SemVer](https://semver.org/) is a convention for versioning software, based on three main numbers: MAJOR, MINOR, and PATCH. 
+
+- MAJOR: the main version number, indicating an incompatible version that requires significant migration to adapt to.
+
+- MINOR: the version number indicating the introduction of new features without breaking compatibility with previous versions.
+
+- PATCH: the version number indicating the correction of bugs or minor issues without changing features or compatibility.
+
+The version of software according to Semver is indicated in the MAJOR.MINOR.PATCH format. For example, version 1.2.3 indicates the first major version of the software, with the second minor version and the third patch.
+
+## How should these "indicators" be managed?
+
+- When introducing a breaking change with previous versions, the MAJOR version number should be incremented.
+
+- When introducing new features without breaking compatibility, the MINOR version number should be incremented.
+
+- When correcting bugs or minor issues without changing features, the PATCH version number should be incremented.
+
+- When releasing a new version, the version number should be updated in all configuration and documentation files that refer to the software version.
