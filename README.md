@@ -72,3 +72,37 @@ When the release branch has been tested and approved, create a new **release tag
 Finally, the `release` branch is merged into the `main` branch for distribution. This marks the end of the development cycle and the software is deployed in production.
 
 # Conventional Commits
+
+Conventional Commits provide a naming convention system for labeling commits in a consistent and meaningful way, making it easier to read and understand the Git log and the changes made to the project. Using a standard convention helps maintain good code organization and facilitates collaboration among development team members.
+
+`<type>[optional scope]: <short description>`
+
+## Conventional Commit prefixes
+
+- feat: adding a new feature
+- fix: fixing a bug
+- docs: changes to documentation
+- style: code changes that don't affect the meaning (e.g. white-space, formatting, etc...)
+- refactor: code changes that neither fix a bug nor add a feature
+- perf: changes that improve performance
+- test: adding or modifying tests
+- build: changes to build process or tools (e.g. updating dependencies)
+- ci: changes to CI configuration files
+- chore: other changes that don't modify source code or test files
+- revert: reverting a previous commit
+
+## optional scope
+
+Optional scopes in Conventional Commits are an optional section that provides additional context about the change made. The scope field is separated from the commit type and description by an open and closed parenthesis and should be written in lowercase.
+
+The scope field can provide additional information about the location of the change within the code or the specific component of the system that was modified. This can be particularly useful in larger projects where there are many parts of the code and multiple contributors. The use of optional scopes in Conventional Commits depends on the needs of the project and the preferences of the development team. In some cases, the scope can be extremely useful in providing greater clarity about the changes made, while in other cases it may be less relevant.
+
+Example:
+
+`feat(api): add new REST API`
+
+## BREAKING CHANGE prefix
+
+The prefix **BREAKING CHANGE** can be used to indicate that the commit introduces a change that breaks compatibility with previous versions of the application or library. This prefix should only be used if the change is "breaking" in nature and requires significant code changes to continue functioning properly.
+
+When using the BREAKING CHANGE prefix, the commit description should provide a detailed description of the change and the modifications necessary to adapt to the new features or changes made. Additionally, the description should include a note about the nature of the change and why it was necessary.
