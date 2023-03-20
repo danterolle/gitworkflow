@@ -24,15 +24,51 @@ Finally, once the release branch has been tested and approved, it is merged into
 
 # Development Process
 
-1. Initializing the Git repository: Initialize a new Git repository on your local computer and upload your source files to it.
-2. Creating the `dev` branch: Create a new development branch called `dev` from the `main` branch.
-3. Creating `feature` branches: Create a new feature branch from the dev branch for each new feature or bug fix. Use a descriptive name for the feature branch that helps identify its purpose. Use the prefix `feature/` + the name of the branch with the new feature. 
-4. Developing features: Work on the `feature branch` to develop the feature or fix the bug.
-5. Creating a pull request: Once the feature or bug fix is complete, create a **pull request** from the feature branch to the `dev` branch. This will help review and discuss the changes made.
-6. Code review: Team members review and discuss the changes made to the feature or bug fix in the pull request. If necessary, further changes are made.
-7. Pull request approval: Once the feature or bug fix has been approved, the pull request is merged into the `dev` branch.
-8. Creating the `release` branch: When all planned features for a release have been merged into the dev branch and the code has been tested, create a new release branch from the dev branch. Assign a unique version number to the release branch.
-9. Final development: Any necessary bug fixes or final modifications are made on the release branch.
-10. Testing: The code on the release branch is tested to ensure it functions as expected and there are no errors.
-11. Creating the release tag: When the release branch has been tested and approved, create a new **release tag** from the release branch to mark the software version.
-12. Merging to the `main` branch: Finally, the `release` branch is merged into the `main` branch for distribution. This marks the end of the development cycle and the software is deployed in production.
+### 1. Initializing the Git repository
+
+Initialize a new Git repository on your local computer and upload your source files to it.
+
+### 2. Creating the `dev` branch
+
+Create a new development branch called `dev` from the `main` branch.
+
+### 3. Creating `feature` branches
+
+Create a new feature branch from the dev branch for each new feature or bug fix. Use a descriptive name for the feature branch that helps identify its purpose. Use the prefix `feature/` + the name of the branch with the new feature. 
+
+### 4. Developing features
+
+Work on the `feature branch` to develop the feature or fix the bug.
+
+### 5. Creating a pull request
+
+Once the feature or bug fix is complete, create a **pull request** from the feature branch to the `dev` branch. This will help review and discuss the changes made.
+
+### 6. Code review
+
+Team members review and discuss the changes made to the feature or bug fix in the pull request. If necessary, further changes are made.
+
+### 7. Pull request approval
+
+Once the feature or bug fix has been approved, the pull request is merged into the `dev` branch.
+### 8. Creating the `release` branch
+
+When all planned features for a release have been merged into the dev branch and the code has been tested, create a new release branch from the dev branch. Assign a unique version number to the release branch.
+
+### 9. Final development
+
+Any necessary bug fixes or final modifications are made on the release branch.
+
+### 10. Testing
+
+The code on the release branch is tested to ensure it functions as expected and there are no errors.
+
+### 11. Creating the release tag
+
+When the release branch has been tested and approved, create a new **release tag** from the release branch to mark the software version.
+
+### 12. Merging to the `main` branch
+
+Finally, the `release` branch is merged into the `main` branch for distribution. This marks the end of the development cycle and the software is deployed in production.
+
+# Conventional Commits
